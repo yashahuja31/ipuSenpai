@@ -49,7 +49,7 @@ const RemoveEnrollmentButton = ({
       }
     } catch (error) {
       console.error("Error removing enrollment:", error);
-      alert("Error removing enrollment number. Please try again.");
+      setErrorMessage("Error removing enrollment number. Please try again.");
     } finally {
       setIsRemoving(false);
     }
